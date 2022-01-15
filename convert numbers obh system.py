@@ -1,0 +1,9 @@
+n1="17"
+n2="1110010"
+n3="1c2"
+n=int(n1,8)
+print('octal 17 =',n)
+n=int(n2,2)
+print('binary 1110010 = ',n)
+n=int(n3,16)
+print('hexadecimal 1c2=',n)
