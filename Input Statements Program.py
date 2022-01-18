@@ -1,3 +1,3 @@
-# accepting a string from keyboard
-str=input("enter a string:")
-print('U entered: ',str)#display entire string
+# accepting a single character or string from keyboard
+ch=input("Enter a char :")
+print("U entered: ",ch[0])
