@@ -8,6 +8,3 @@ while x>=m and x<=n:
     x+=2
 
 
-
-
-
