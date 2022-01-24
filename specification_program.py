@@ -1,6 +1,6 @@
-class a
+class a:
     --a=2
-    def(self)
+def(self)
     print(--a)
     obj=f()
     print(--a)

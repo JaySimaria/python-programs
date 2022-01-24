@@ -1,9 +1,9 @@
 # python program to find the 
-# maxmiun of two numbers 
+# maxmimum of two numbers 
 
 def maxmium(a,b):
     df
- if a >= b:
+ if a >= b :
     return a
  else:
     return b
