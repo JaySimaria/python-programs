@@ -1,9 +1,18 @@
-def avg(marks):
-    assert len(marks) != 0,"List is empty."
-    return sum(marks)/len(marks)
+#26-3-22
+#understanding assert statement
+x=int(input('enter a number greater than 0: '))
+assert x>0,"wrong input entered"
+print('U entered: ',x)
 
-mark2 = [55,88,78,90,79]
-print("Average of mark2:",avg(mark2))
 
-mark1 = []
-print("Average of mark1:",avg(mark1))
+
+
+#to handle assertion error raised by assert\
+x=int(input('enter a number greater than 0:'))
+try:
+    assert(x>0) # exception may occur here
+    print('u entered:',x)
+except assertionerror:
+    print("Wrong input entered")# this is executed in case of
+    #exception    
+
