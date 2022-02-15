@@ -11,5 +11,5 @@ except(KeyError,ValueError,TypeError):
     import json
     json_data='{"name":"yamini","city":"ahmedabad"}'
     python_obj=json.loads(json_data)
-    print json.dumps(python_obj,sort_keys=true,indent=4)
+    print (json.dumps(python_obj,sort_keys=true,indent=4))
     # display in real json syntax indent will give spacce to string
