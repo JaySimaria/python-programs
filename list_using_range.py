@@ -19,7 +19,6 @@ for i in list3:
     
 #displaying list of elements using while and for loop
 list=[10,20,30,40,50,60]
-
 print('using while loop')
 i=0
 while i<len(list): # repeat from 0 to length of list
