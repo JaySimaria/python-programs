@@ -1,21 +1,29 @@
-# 13-12-2022
+# 17-12-22
 # selection sort
-# time complexity O(n*n)
-# sorting by finding min_index
-def selectionSort(array, size):
-    for ind in range(size):
-        min_index = ind
+def selection_sort(array):
+    #  loop from the beginning of the array to the second to last item
+    currentIndex = 0
+    while (currentIndex < len(array) - 1):
+        #  save a copy of the currentIndex
+        minIndex = currentIndex
+        #  loop through all indexes that proceed the currentIndex
+        i = currentIndex + 1
+        while (i < len(array)):
+            #    if the value of the index of the current loop is less
+            #           than the value of the item at minIndex, update minIndex
+            #           with the new lowest value index
+            if (array[i] < array[minIndex]):
+                # update minIndex with the new lowest value index
+                minIndex = i
+            i += 1
+        # if minIndex has been updated, swap the values at minIndex and currentIndex
+        if (minIndex != currentIndex):
+            temp = array[currentIndex]
+            array[currentIndex] = array[minIndex]
+            array[minIndex] = temp
+        currentIndex += 1
 
-        for j in range(ind + 1, size):
-            # select the minimum element in every iteration
-            if array[j] < array[min_index]:
-                min_index = j
-        # swapping the elements to sort the array
-        (array[ind], array[min_index]) = (array[min_index], array[ind])
-
-
-arr = [100,95,69,48,90,33,6,34,88,90,9,85,66,50,55,5,1]
-size = len(arr)
-selectionSort(arr, size)
-print('The array after sorting in Ascending Order by selection sort is:')
-print(arr)
+if __name__ == '__main__':
+    array = [12, 11, 15, 10, 9, 1, 2, 3, 13, 14, 4, 5, 6, 7, 8]
+    selection_sort(array)
+    print(array)
