@@ -1,22 +1,20 @@
-# 11-12-22
-# linear search using array
-# Linear Search in Python
+# 4-1-2023
+# linear search array
+def linear_search(arr, a, b):
 
-
-def linearSearch(array, n, x):
-
-    # array using sequencially
-    for i in range(0, n):
-        if (array[i] == x):
+    # Going through array
+    for i in range(0, a):
+        if (arr[i] == b):
             return i
     return -1
 
-
-array = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-x = 100
-n = len(array)
-result = linearSearch(array, n, x)
-if(result == -1):
-    print("Element not found")
+arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+print("The array given is ", arr)
+b = 80
+print("Element to be found is ", b)
+a = len(arr)
+index = linear_search(arr, a, b)
+if(index == -1):
+    print("Element is not in the list")
 else:
-    print("Element found at index: ", result)
+    print("Index of the element is: ", index)
