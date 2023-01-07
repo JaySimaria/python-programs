@@ -2,7 +2,7 @@
 # queue using list
 # create a empty queue
 queue = []
-# # Adding elements to the queue
+#  Adding elements to the queue
 queue.append('b')
 queue.append('j')
 queue.append('s')
