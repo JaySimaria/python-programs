@@ -1,16 +1,11 @@
 # 17-1-23
 # merge two dictionaries
-D1 = {'name': 'Jay',
-      'age': 25,
-      'job': 'Devops engineer',
-      'salary': '300000'
-      }
 
-D2 = {'Name': 'Messi',
-      'age': 30,
-      'city': 'Argentina',
-      'email': 'lionMessi@gmail.com',
-      'profession': 'footballer'}
+def merge(dict1, dict2):
+    result = dict1 | dict2  # merge operator (|)
+    return result
 
-D1.update(D2)
-print(D1)
+
+dict1 = {'A': 'Jay ', 'B': 'Messi ', 'C': 'Ronaldo'}
+dict2 = {'D': 'Hardik Pandiya ', 'E': 'Rishabh pant', 'F': 'Kohli'}
+print(merge(dict1, dict2))  # print dict3
